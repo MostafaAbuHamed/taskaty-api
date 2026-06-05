@@ -1,3 +1,4 @@
+const { CONSTANTS } = require("../utils/constants.js");
 const { generateId } = require("../utils/idGenerator.js");
 
 function Task(title, description, dueDate = null) {
@@ -5,8 +6,8 @@ function Task(title, description, dueDate = null) {
     this.title = title;
     this.description = description;
     this.dueDate = dueDate;
-    this.status = "to-do";
-    this.priority = "low";
+    this.status = CONSTANTS.STATUS.TODO;
+    this.priority = CONSTANTS.PRIORITY.LOW;
     this.categoryId = "";
     this.tags = [];
     this.estimatedHours = 0;
