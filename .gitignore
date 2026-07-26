@@ -1,3 +1,9 @@
 node_modules/
 .env
 *.log
+
+# AI Agent files
+.agent/
+.omo/
+CLAUDE.md
+DevelopmentPlan.md

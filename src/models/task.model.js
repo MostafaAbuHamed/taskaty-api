@@ -1,8 +1,7 @@
 const { CONSTANTS } = require("../utils/constants.js");
-const { generateId } = require("../utils/idGenerator.js");
 
 function Task(title, description, dueDate = null) {
-    this.id = generateId();
+    this.id = crypto.randomUUID();
     this.title = title;
     this.description = description;
     this.dueDate = dueDate;
